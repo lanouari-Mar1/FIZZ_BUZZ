@@ -20,10 +20,12 @@ class MainViewController: UIViewController {
   
   // MARK: Properties
   private let coordinator: NavigationRoutingLogic
+  private let interactor: MainUseCase
   
   // MARK: Initializers
-  init(coordinator: NavigationRoutingLogic) {
+  init(interactor: MainUseCase, coordinator: NavigationRoutingLogic) {
     self.coordinator = coordinator
+    self.interactor = interactor
     super.init(nibName: nil, bundle: nil)
   }
   
@@ -33,6 +35,13 @@ class MainViewController: UIViewController {
   
   // MARK: UserAction
   @IBAction private func userDidTapValidate(_ sender: Any) {
+    interactor.userTapValidate(
+      int1Str: int1TxtField.text,
+      int2Str: int2TxtField.text,
+      limitStr: limitTxtField.text,
+      str1: str1TxtField.text,
+      str2: str2TxtField.text
+    )
   }
   
   // MARK: LifeCycle
@@ -40,6 +49,24 @@ class MainViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     setNotificationKeyboard()
+    interactor.viewModel.displayedResult.context.addObserver(fireNow: false) { [weak self] context in
+      self?.updateDisplay(with: context)
+    }
+  }
+  
+  private func updateDisplay(with context: DisplayType<String>) {
+    switch context {
+    case .isLoading:
+      // TODO: loading UI
+    break
+    case .error:
+      // TODO: show error popup
+    break
+    case .success(let result):
+      resultLbl.text = result
+    default:
+      break
+    }
   }
 }
 

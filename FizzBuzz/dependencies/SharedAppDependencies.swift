@@ -19,10 +19,17 @@ class SharedAppDependencies : SharedRootContainer {
   init() {
     self.fizzBuzzService = FizzBuzzService()
   }
+  
   func makeMainNavigationController() -> UINavigationController {
     let nvc = UINavigationController()
     let coordinator = NavigationCoordinator(dependencies: self, navigationController: nvc)
-    nvc.viewControllers = [MainViewController(coordinator: coordinator)]
+    let mainVC = MainViewController(
+      interactor: MainInteractor(
+        fizzBuzzService: fizzBuzzService
+      ),
+      coordinator: coordinator
+    )
+    nvc.viewControllers = [mainVC]
     return nvc
   }
   
