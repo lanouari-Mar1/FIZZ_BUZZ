@@ -14,6 +14,11 @@ protocol SharedRootContainer {
 
 class SharedAppDependencies : SharedRootContainer {
   
+  let fizzBuzzService: FizzBuzzServiceProtocol
+  
+  init() {
+    self.fizzBuzzService = FizzBuzzService()
+  }
   func makeMainNavigationController() -> UINavigationController {
     let nvc = UINavigationController()
     let coordinator = NavigationCoordinator(dependencies: self, navigationController: nvc)
