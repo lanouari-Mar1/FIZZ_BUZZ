@@ -17,6 +17,7 @@
 		104CB86E2668175400718F9A /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104CB86D2668175400718F9A /* MainViewModel.swift */; };
 		104CB873266817E700718F9A /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104CB872266817E700718F9A /* MainInteractor.swift */; };
 		104CB8782668186E00718F9A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104CB8772668186E00718F9A /* Constants.swift */; };
+		104CB87D26681C0D00718F9A /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104CB87C26681C0D00718F9A /* UIViewController+Extensions.swift */; };
 		10CA25362666ADE00065F18B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CA25352666ADE00065F18B /* AppDelegate.swift */; };
 		10CA253F2666ADE20065F18B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10CA253E2666ADE20065F18B /* Assets.xcassets */; };
 		10CA25422666ADE20065F18B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10CA25402666ADE20065F18B /* LaunchScreen.storyboard */; };
@@ -54,6 +55,7 @@
 		104CB86D2668175400718F9A /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		104CB872266817E700718F9A /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
 		104CB8772668186E00718F9A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		104CB87C26681C0D00718F9A /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		10CA25322666ADE00065F18B /* FizzBuzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FizzBuzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10CA25352666ADE00065F18B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10CA253E2666ADE20065F18B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 			children = (
 				104CB82F2668003D00718F9A /* observable.swift */,
 				104CB83C266804B100718F9A /* DisplayViewModel.swift */,
+				104CB87C26681C0D00718F9A /* UIViewController+Extensions.swift */,
 			);
 			path = helpers;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				104CB8782668186E00718F9A /* Constants.swift in Sources */,
 				104CB8302668003D00718F9A /* observable.swift in Sources */,
 				104CB83D266804B200718F9A /* DisplayViewModel.swift in Sources */,
+				104CB87D26681C0D00718F9A /* UIViewController+Extensions.swift in Sources */,
 				104CB873266817E700718F9A /* MainInteractor.swift in Sources */,
 				10CA25362666ADE00065F18B /* AppDelegate.swift in Sources */,
 				10260CBF2667A29300D65DD3 /* NavigationCoordinator.swift in Sources */,

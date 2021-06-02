@@ -68,6 +68,7 @@ class MainViewController: UIViewController {
     case .isLoading:
       refreshLoadingAnimation(isPlaying: true)
     case .error:
+      presentErrorAlert(title: Constants.validationErrorTitle, message: Constants.validationErrorMessage)
       refreshLoadingAnimation(isPlaying: false)
     break
     case .success(let result):
