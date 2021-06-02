@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="FizzBuzz" customModuleProvider="target">
             <connections>
+                <outlet property="activityContainerView" destination="3bA-16-HAg" id="ieS-I6-ku1"/>
+                <outlet property="activityIndicator" destination="Yyc-2h-iai" id="Ovy-9Y-D9h"/>
                 <outlet property="int1TxtField" destination="F48-oh-JuD" id="d1N-UA-Dvc"/>
                 <outlet property="int2TxtField" destination="I6W-R1-W5E" id="g0S-W3-NCk"/>
                 <outlet property="limitTxtField" destination="kA8-h8-bsx" id="9MA-EX-wDS"/>
@@ -142,11 +144,28 @@
                         <constraint firstItem="8BC-nd-7UM" firstAttribute="leading" secondItem="pPN-jO-5y3" secondAttribute="leading" constant="20" id="xIh-NL-hIt"/>
                     </constraints>
                 </scrollView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3bA-16-HAg">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Yyc-2h-iai">
+                            <rect key="frame" x="197" y="399" width="20" height="20"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Yyc-2h-iai" firstAttribute="centerX" secondItem="3bA-16-HAg" secondAttribute="centerX" id="dgf-th-Zzo"/>
+                        <constraint firstItem="Yyc-2h-iai" firstAttribute="centerY" secondItem="3bA-16-HAg" secondAttribute="centerY" id="kIP-mv-CJY"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="IDz-yQ-XTb"/>
             <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
             <constraints>
                 <constraint firstItem="pPN-jO-5y3" firstAttribute="top" secondItem="IDz-yQ-XTb" secondAttribute="top" id="HFz-1z-i8Q"/>
+                <constraint firstItem="3bA-16-HAg" firstAttribute="bottom" secondItem="IDz-yQ-XTb" secondAttribute="bottom" id="P0H-2I-Z4v"/>
+                <constraint firstItem="3bA-16-HAg" firstAttribute="top" secondItem="IDz-yQ-XTb" secondAttribute="top" id="THx-Z4-Rea"/>
+                <constraint firstItem="3bA-16-HAg" firstAttribute="trailing" secondItem="IDz-yQ-XTb" secondAttribute="trailing" id="Thk-Jx-j65"/>
+                <constraint firstItem="3bA-16-HAg" firstAttribute="leading" secondItem="IDz-yQ-XTb" secondAttribute="leading" id="Z5c-Hm-Jwe"/>
                 <constraint firstItem="pPN-jO-5y3" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="bR8-6L-lIa"/>
                 <constraint firstItem="pPN-jO-5y3" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="ifE-eO-WcU"/>
                 <constraint firstItem="pPN-jO-5y3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ocp-55-0Pw"/>

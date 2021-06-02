@@ -17,6 +17,9 @@ class MainViewController: UIViewController {
   @IBOutlet private weak var str1TxtField: UITextField!
   @IBOutlet private weak var str2TxtField: UITextField!
   @IBOutlet private weak var resultLbl: UILabel!
+  @IBOutlet private weak var activityContainerView: UIView!
+  @IBOutlet private weak var activityIndicator: UIActivityIndicatorView!
+  
   
   // MARK: Properties
   private let coordinator: NavigationRoutingLogic
@@ -45,7 +48,6 @@ class MainViewController: UIViewController {
   }
   
   // MARK: LifeCycle
-  
   override func viewDidLoad() {
     super.viewDidLoad()
     setNotificationKeyboard()
@@ -55,23 +57,31 @@ class MainViewController: UIViewController {
     }
   }
   
+  // MARK: Private methodes
   private func setUpUI() {
     title = Constants.mainTitle
+    activityContainerView.isHidden = true
   }
   
   private func updateDisplay(with context: DisplayType<String>) {
     switch context {
     case .isLoading:
-      // TODO: loading UI
-    break
+      refreshLoadingAnimation(isPlaying: true)
     case .error:
-      // TODO: show error popup
+      refreshLoadingAnimation(isPlaying: false)
     break
     case .success(let result):
+      refreshLoadingAnimation(isPlaying: false)
       resultLbl.text = result
     default:
+      refreshLoadingAnimation(isPlaying: false)
       break
     }
+  }
+  
+  private func refreshLoadingAnimation(isPlaying: Bool) {
+    isPlaying ? activityIndicator.startAnimating() : activityIndicator.stopAnimating()
+    activityContainerView.isHidden = !isPlaying
   }
 }
 
