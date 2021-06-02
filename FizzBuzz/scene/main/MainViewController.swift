@@ -49,9 +49,14 @@ class MainViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     setNotificationKeyboard()
+    setUpUI()
     interactor.viewModel.displayedResult.context.addObserver(fireNow: false) { [weak self] context in
       self?.updateDisplay(with: context)
     }
+  }
+  
+  private func setUpUI() {
+    title = Constants.mainTitle
   }
   
   private func updateDisplay(with context: DisplayType<String>) {

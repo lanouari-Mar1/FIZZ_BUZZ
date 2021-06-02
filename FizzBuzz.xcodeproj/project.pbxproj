@@ -16,6 +16,7 @@
 		104CB8662668159800718F9A /* FizzBuzzService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104CB8652668159800718F9A /* FizzBuzzService.swift */; };
 		104CB86E2668175400718F9A /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104CB86D2668175400718F9A /* MainViewModel.swift */; };
 		104CB873266817E700718F9A /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104CB872266817E700718F9A /* MainInteractor.swift */; };
+		104CB8782668186E00718F9A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104CB8772668186E00718F9A /* Constants.swift */; };
 		10CA25362666ADE00065F18B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CA25352666ADE00065F18B /* AppDelegate.swift */; };
 		10CA253F2666ADE20065F18B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10CA253E2666ADE20065F18B /* Assets.xcassets */; };
 		10CA25422666ADE20065F18B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10CA25402666ADE20065F18B /* LaunchScreen.storyboard */; };
@@ -52,6 +53,7 @@
 		104CB8652668159800718F9A /* FizzBuzzService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzService.swift; sourceTree = "<group>"; };
 		104CB86D2668175400718F9A /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		104CB872266817E700718F9A /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		104CB8772668186E00718F9A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		10CA25322666ADE00065F18B /* FizzBuzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FizzBuzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10CA25352666ADE00065F18B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10CA253E2666ADE20065F18B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 		104CB82D2668001E00718F9A /* constants */ = {
 			isa = PBXGroup;
 			children = (
+				104CB8772668186E00718F9A /* Constants.swift */,
 			);
 			path = constants;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10CA25732666AE450065F18B /* MainViewController.swift in Sources */,
+				104CB8782668186E00718F9A /* Constants.swift in Sources */,
 				104CB8302668003D00718F9A /* observable.swift in Sources */,
 				104CB83D266804B200718F9A /* DisplayViewModel.swift in Sources */,
 				104CB873266817E700718F9A /* MainInteractor.swift in Sources */,
