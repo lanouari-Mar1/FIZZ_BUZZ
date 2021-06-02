@@ -39,6 +39,47 @@ class MainViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
+    setNotificationKeyboard()
   }
+}
+
+// Mark: Keyboard Management
+extension MainViewController {
+  
+  private func setNotificationKeyboard() {
+    NotificationCenter.default.addObserver(self,
+                                           selector: #selector(self.keyboardWillShow),
+                                           name: UIResponder.keyboardWillShowNotification,
+                                           object: nil)
+    
+    NotificationCenter.default.addObserver(self,
+                                           selector: #selector(self.keyboardWillHide),
+                                           name: UIResponder.keyboardWillHideNotification,
+                                           object: nil)
+    view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTap)))
+  }
+  
+  @objc private func keyboardWillShow(notification: NSNotification) {
+    guard let userInfo = notification.userInfo,
+          let value = userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue
+    else { return }
+    
+    var keyboardFrame = value.cgRectValue
+    keyboardFrame = view.convert(keyboardFrame, from: nil)
+    
+    var contentInset: UIEdgeInsets = scrollView.contentInset
+    contentInset.bottom = keyboardFrame.size.height
+    scrollView.contentInset = contentInset
+  }
+  
+  @objc private func keyboardWillHide(notification: NSNotification) {
+    var contentInset: UIEdgeInsets = scrollView.contentInset
+    contentInset.bottom = .zero
+    scrollView.contentInset = contentInset
+  }
+  
+  @objc private func didTap() {
+    view.endEditing(true)
+  }
+  
 }
