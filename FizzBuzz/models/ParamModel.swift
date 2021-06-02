@@ -17,7 +17,7 @@ struct ParamModel: Hashable {
   
   init?(int1Str: String?, int2Str: String?, limitStr: String?, str1: String?, str2: String?) {
     guard let int1Strong = Int(int1Str ?? ""),
-          let int2Strong = Int(int1Str ?? ""),
+          let int2Strong = Int(int2Str ?? ""),
           let limiteStrong = Int(limitStr ?? ""),
           let str1Strong = str1,
           let str2Strong = str2 else {
