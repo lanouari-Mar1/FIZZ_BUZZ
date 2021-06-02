@@ -32,7 +32,7 @@ class FizzBuzzService: FizzBuzzServiceProtocol {
   }
   
   private func getFizzBuzzString(for number: Int, model: ParamModel) -> String {
-    switch (number % 3 == 0, number % 5 == 0) {
+    switch (number % model.int1 == 0, number % model.int2 == 0) {
     case (true, false):
       return model.str1
     case (false, true):
