@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CalculModel {
+struct ParamModel: Hashable {
   
   let int1: Int
   let int2: Int

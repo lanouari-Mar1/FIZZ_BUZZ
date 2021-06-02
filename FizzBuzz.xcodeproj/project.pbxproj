@@ -120,21 +120,23 @@
 			path = constants;
 			sourceTree = "<group>";
 		};
-		104CB82E2668002C00718F9A /* helper */ = {
+		104CB82E2668002C00718F9A /* helpers */ = {
 			isa = PBXGroup;
 			children = (
 				104CB82F2668003D00718F9A /* observable.swift */,
 				104CB83C266804B100718F9A /* DisplayViewModel.swift */,
 			);
-			path = helper;
+			path = helpers;
 			sourceTree = "<group>";
 		};
-		104CB841266805B500718F9A /* model */ = {
+		104CB841266805B500718F9A /* models */ = {
 			isa = PBXGroup;
 			children = (
 				104CB842266805E000718F9A /* ParamModel.swift */,
 			);
-			path = model;
+			path = models;
+			sourceTree = "<group>";
+		};
 		104CB85B2668151B00718F9A /* services */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,9 +176,9 @@
 		10CA25342666ADE00065F18B /* FizzBuzz */ = {
 			isa = PBXGroup;
 			children = (
-				104CB841266805B500718F9A /* model */,
-				104CB82E2668002C00718F9A /* helper */,
 				104CB85B2668151B00718F9A /* services */,
+				104CB841266805B500718F9A /* models */,
+				104CB82E2668002C00718F9A /* helpers */,
 				104CB82D2668001E00718F9A /* constants */,
 				104CB82B2668000400718F9A /* scene */,
 				10260CBD2667A27A00D65DD3 /* coordinator */,
