@@ -16,5 +16,6 @@ struct DisplayViewModel<T> {
 enum DisplayType<T> {
   case isLoading
   case none
+  case error
   case success(T)
 }
