@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10260CB92667A17000D65DD3 /* SharedAppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10260CB82667A17000D65DD3 /* SharedAppDependencies.swift */; };
 		10CA25362666ADE00065F18B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CA25352666ADE00065F18B /* AppDelegate.swift */; };
 		10CA253F2666ADE20065F18B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10CA253E2666ADE20065F18B /* Assets.xcassets */; };
 		10CA25422666ADE20065F18B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10CA25402666ADE20065F18B /* LaunchScreen.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10260CB82667A17000D65DD3 /* SharedAppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedAppDependencies.swift; sourceTree = "<group>"; };
 		10CA25322666ADE00065F18B /* FizzBuzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FizzBuzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10CA25352666ADE00065F18B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10CA253E2666ADE20065F18B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,6 +76,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		106048F52667A0FE003F7E2C /* dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				10260CB82667A17000D65DD3 /* SharedAppDependencies.swift */,
+			);
+			path = dependencies;
+			sourceTree = "<group>";
+		};
 		10CA25292666ADE00065F18B = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +107,7 @@
 		10CA25342666ADE00065F18B /* FizzBuzz */ = {
 			isa = PBXGroup;
 			children = (
+				106048F52667A0FE003F7E2C /* dependencies */,
 				10CA25352666ADE00065F18B /* AppDelegate.swift */,
 				10CA253E2666ADE20065F18B /* Assets.xcassets */,
 				10CA25402666ADE20065F18B /* LaunchScreen.storyboard */,
@@ -257,6 +268,7 @@
 			files = (
 				10CA25732666AE450065F18B /* MainViewController.swift in Sources */,
 				10CA25362666ADE00065F18B /* AppDelegate.swift in Sources */,
+				10260CB92667A17000D65DD3 /* SharedAppDependencies.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
