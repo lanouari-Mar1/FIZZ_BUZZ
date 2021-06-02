@@ -15,7 +15,9 @@ protocol SharedRootContainer {
 class SharedAppDependencies : SharedRootContainer {
   
   func makeMainNavigationController() -> UINavigationController {
-    let nvc = UINavigationController(rootViewController: MainViewController())
+    let nvc = UINavigationController()
+    let coordinator = NavigationCoordinator(dependencies: self, navigationController: nvc)
+    nvc.viewControllers = [MainViewController(coordinator: coordinator)]
     return nvc
   }
   
