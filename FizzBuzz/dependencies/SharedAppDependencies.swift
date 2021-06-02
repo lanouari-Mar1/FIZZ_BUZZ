@@ -10,6 +10,8 @@ import UIKit
 
 protocol SharedRootContainer {
   func makeMainNavigationController() -> UINavigationController
+  func makeStatisticViewController() -> StatisticViewController
+  
 }
 
 class SharedAppDependencies : SharedRootContainer {
@@ -31,6 +33,10 @@ class SharedAppDependencies : SharedRootContainer {
     )
     nvc.viewControllers = [mainVC]
     return nvc
+  }
+  
+  func makeStatisticViewController() -> StatisticViewController {
+    StatisticViewController()
   }
   
 }

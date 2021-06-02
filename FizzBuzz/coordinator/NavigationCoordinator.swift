@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 protocol NavigationRoutingLogic: AnyObject {
+  func showStatisticView()
 }
 
 class NavigationCoordinator: NavigationRoutingLogic {
@@ -25,4 +26,8 @@ class NavigationCoordinator: NavigationRoutingLogic {
     self.navigationController = navigationController
   }
   
+  func showStatisticView() {
+    let statisticVC = dependencies.makeStatisticViewController()
+    navigationController.pushViewController(statisticVC, animated: true)
+  }
 }

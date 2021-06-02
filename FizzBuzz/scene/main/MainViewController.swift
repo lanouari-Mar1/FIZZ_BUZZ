@@ -47,6 +47,10 @@ class MainViewController: UIViewController {
     )
   }
   
+  @IBAction func userDidTapStatistic(_ sender: Any) {
+    coordinator.showStatisticView()
+  }
+  
   // MARK: LifeCycle
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -59,7 +63,7 @@ class MainViewController: UIViewController {
   
   // MARK: Private methodes
   private func setUpUI() {
-    title = Constants.mainTitle
+    title = Constants.mainVCTitle
     activityContainerView.isHidden = true
   }
   

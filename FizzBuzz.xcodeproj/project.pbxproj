@@ -18,6 +18,8 @@
 		104CB873266817E700718F9A /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104CB872266817E700718F9A /* MainInteractor.swift */; };
 		104CB8782668186E00718F9A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104CB8772668186E00718F9A /* Constants.swift */; };
 		104CB87D26681C0D00718F9A /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104CB87C26681C0D00718F9A /* UIViewController+Extensions.swift */; };
+		104CB88426681E0100718F9A /* StatisticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104CB88226681E0100718F9A /* StatisticViewController.swift */; };
+		104CB88526681E0100718F9A /* StatisticViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 104CB88326681E0100718F9A /* StatisticViewController.xib */; };
 		10CA25362666ADE00065F18B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CA25352666ADE00065F18B /* AppDelegate.swift */; };
 		10CA253F2666ADE20065F18B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10CA253E2666ADE20065F18B /* Assets.xcassets */; };
 		10CA25422666ADE20065F18B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10CA25402666ADE20065F18B /* LaunchScreen.storyboard */; };
@@ -56,6 +58,8 @@
 		104CB872266817E700718F9A /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
 		104CB8772668186E00718F9A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		104CB87C26681C0D00718F9A /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		104CB88226681E0100718F9A /* StatisticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticViewController.swift; sourceTree = "<group>"; };
+		104CB88326681E0100718F9A /* StatisticViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticViewController.xib; sourceTree = "<group>"; };
 		10CA25322666ADE00065F18B /* FizzBuzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FizzBuzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10CA25352666ADE00065F18B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10CA253E2666ADE20065F18B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -107,6 +111,7 @@
 		104CB82B2668000400718F9A /* scene */ = {
 			isa = PBXGroup;
 			children = (
+				104CB88126681DE900718F9A /* statistic */,
 				104CB82C2668001200718F9A /* main */,
 			);
 			path = scene;
@@ -155,6 +160,15 @@
 				104CB8652668159800718F9A /* FizzBuzzService.swift */,
 			);
 			path = services;
+			sourceTree = "<group>";
+		};
+		104CB88126681DE900718F9A /* statistic */ = {
+			isa = PBXGroup;
+			children = (
+				104CB88226681E0100718F9A /* StatisticViewController.swift */,
+				104CB88326681E0100718F9A /* StatisticViewController.xib */,
+			);
+			path = statistic;
 			sourceTree = "<group>";
 		};
 		106048F52667A0FE003F7E2C /* dependencies */ = {
@@ -328,6 +342,7 @@
 				10CA25422666ADE20065F18B /* LaunchScreen.storyboard in Resources */,
 				10CA25742666AE450065F18B /* MainViewController.xib in Resources */,
 				10CA253F2666ADE20065F18B /* Assets.xcassets in Resources */,
+				104CB88526681E0100718F9A /* StatisticViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +375,7 @@
 				104CB873266817E700718F9A /* MainInteractor.swift in Sources */,
 				10CA25362666ADE00065F18B /* AppDelegate.swift in Sources */,
 				10260CBF2667A29300D65DD3 /* NavigationCoordinator.swift in Sources */,
+				104CB88426681E0100718F9A /* StatisticViewController.swift in Sources */,
 				104CB843266805E000718F9A /* ParamModel.swift in Sources */,
 				10260CB92667A17000D65DD3 /* SharedAppDependencies.swift in Sources */,
 				104CB8662668159800718F9A /* FizzBuzzService.swift in Sources */,
