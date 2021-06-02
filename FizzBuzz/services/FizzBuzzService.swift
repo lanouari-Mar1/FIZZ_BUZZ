@@ -9,14 +9,18 @@ import Foundation
 
 protocol FizzBuzzServiceProtocol {
   func calculFizzBuzz(model: ParamModel, completion: @escaping (String) -> ())
+  var results: [ParamModel: Int] { get }
 }
 
 class FizzBuzzService: FizzBuzzServiceProtocol {
-    
+  
+  private(set) var results = [ParamModel: Int]()
+  
   func calculFizzBuzz(model: ParamModel, completion: @escaping (String) -> ()) {
     DispatchQueue.global(qos: .userInitiated).async { [weak self] in
       guard let self = self else { return }
       let result = self.calculResult(model: model)
+      self.results[model] = (self.results[model] ?? 0) + 1
       DispatchQueue.main.async {
         completion(result)
       }
