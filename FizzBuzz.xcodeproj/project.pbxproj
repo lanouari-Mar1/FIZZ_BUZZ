@@ -12,7 +12,7 @@
 		104CB8302668003D00718F9A /* observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104CB82F2668003D00718F9A /* observable.swift */; };
 		104CB83D266804B200718F9A /* DisplayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104CB83C266804B100718F9A /* DisplayViewModel.swift */; };
 		104CB843266805E000718F9A /* ParamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104CB842266805E000718F9A /* ParamModel.swift */; };
-		104CB8532668069E00718F9A /* ParamModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104CB8522668069E00718F9A /* ParamModelTest.swift */; };
+		104CB8532668069E00718F9A /* ParamViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104CB8522668069E00718F9A /* ParamViewModelTest.swift */; };
 		104CB8662668159800718F9A /* FizzBuzzService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104CB8652668159800718F9A /* FizzBuzzService.swift */; };
 		104CB86E2668175400718F9A /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104CB86D2668175400718F9A /* MainViewModel.swift */; };
 		104CB873266817E700718F9A /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104CB872266817E700718F9A /* MainInteractor.swift */; };
@@ -57,7 +57,7 @@
 		104CB82F2668003D00718F9A /* observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = observable.swift; sourceTree = "<group>"; };
 		104CB83C266804B100718F9A /* DisplayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayViewModel.swift; sourceTree = "<group>"; };
 		104CB842266805E000718F9A /* ParamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParamModel.swift; sourceTree = "<group>"; };
-		104CB8522668069E00718F9A /* ParamModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParamModelTest.swift; sourceTree = "<group>"; };
+		104CB8522668069E00718F9A /* ParamViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParamViewModelTest.swift; sourceTree = "<group>"; };
 		104CB8652668159800718F9A /* FizzBuzzService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzService.swift; sourceTree = "<group>"; };
 		104CB86D2668175400718F9A /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		104CB872266817E700718F9A /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
@@ -245,7 +245,7 @@
 			children = (
 				10CA254C2666ADE20065F18B /* FizzBuzzTests.swift */,
 				10CA254E2666ADE20065F18B /* Info.plist */,
-				104CB8522668069E00718F9A /* ParamModelTest.swift */,
+				104CB8522668069E00718F9A /* ParamViewModelTest.swift */,
 			);
 			path = FizzBuzzTests;
 			sourceTree = "<group>";
@@ -416,7 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10CA254D2666ADE20065F18B /* FizzBuzzTests.swift in Sources */,
-				104CB8532668069E00718F9A /* ParamModelTest.swift in Sources */,
+				104CB8532668069E00718F9A /* ParamViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

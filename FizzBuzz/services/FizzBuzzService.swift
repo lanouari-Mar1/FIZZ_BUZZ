@@ -36,13 +36,13 @@ class FizzBuzzService: FizzBuzzServiceProtocol {
   }
   
   private func getFizzBuzzString(for number: Int, model: ParamModel) -> String {
-    switch (number % model.int1 == 0, number % model.int2 == 0) {
+    switch (number % model.firstInt == 0, number % model.secondInt == 0) {
     case (true, false):
-      return model.str1
+      return model.firstString
     case (false, true):
-      return model.str2
+      return model.secondString
     case (true, true):
-      return model.str1 + model.str2
+      return model.firstString + model.secondString
     case (false, false):
       return String(number)
     }

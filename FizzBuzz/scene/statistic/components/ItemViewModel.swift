@@ -12,11 +12,11 @@ struct ItemViewModel {
   let countString: String
   
   init(paramModel: ParamModel, count: Int) {
-    modelString = String(paramModel.int1) + "\n"
-      + String(paramModel.int2) + "\n"
+    modelString = String(paramModel.firstInt) + "\n"
+      + String(paramModel.secondInt) + "\n"
       + String(paramModel.limit) + "\n"
-      + paramModel.str1 + "\n"
-      + paramModel.str2
+      + paramModel.firstString + "\n"
+      + paramModel.secondString
     countString = String(count)
   }
 }

@@ -38,13 +38,14 @@ class MainViewController: UIViewController {
   
   // MARK: UserAction
   @IBAction private func userDidTapValidate(_ sender: Any) {
-    interactor.userTapValidate(
-      int1Str: int1TxtField.text,
-      int2Str: int2TxtField.text,
-      limitStr: limitTxtField.text,
-      str1: str1TxtField.text,
-      str2: str2TxtField.text
+    let paramVM = ParamViewModel(
+      firstInt: int1TxtField.text,
+      secondInt: int2TxtField.text,
+      limit: limitTxtField.text,
+      firstString: str1TxtField.text,
+      secondString: str2TxtField.text
     )
+    interactor.calculFizzBuzz(with: paramVM)
   }
   
   @IBAction func userDidTapStatistic(_ sender: Any) {

@@ -9,7 +9,7 @@ import Foundation
 
 protocol MainUseCase {
   var viewModel: MainViewModel { get }
-  func userTapValidate(int1Str: String?, int2Str: String?, limitStr: String?, str1: String?, str2: String?)
+  func calculFizzBuzz(with paramViewModel: ParamViewModel)
 }
 
 class MainInteractor: MainUseCase {
@@ -21,8 +21,8 @@ class MainInteractor: MainUseCase {
     self.fizzBuzzService = fizzBuzzService
   }
   
-  func userTapValidate(int1Str: String?, int2Str: String?, limitStr: String?, str1: String?, str2: String?) {
-    guard let paramModel = ParamModel(int1Str: int1Str, int2Str: int2Str, limitStr: limitStr, str1: str1, str2: str2) else {
+  func calculFizzBuzz(with paramViewModel: ParamViewModel) {
+    guard let paramModel = paramViewModel.getParamModel() else {
       viewModel.displayedResult.context.value = .error
       return
     }
