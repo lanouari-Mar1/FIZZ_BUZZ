@@ -65,6 +65,11 @@ class MainViewController: UIViewController {
   private func setUpUI() {
     title = Constants.mainVCTitle
     activityContainerView.isHidden = true
+    if #available(iOS 13.0, *) {
+      activityIndicator.style = .large
+    } else {
+      activityIndicator.style = .whiteLarge
+    }
   }
   
   private func updateDisplay(with context: DisplayType<String>) {
