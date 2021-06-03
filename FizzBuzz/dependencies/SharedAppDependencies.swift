@@ -36,7 +36,7 @@ class SharedAppDependencies : SharedRootContainer {
   }
   
   func makeStatisticViewController() -> StatisticViewController {
-    StatisticViewController()
+    StatisticViewController(interactor: StatisticInteractor(fizzBuzzService: fizzBuzzService))
   }
   
 }
