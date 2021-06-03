@@ -20,6 +20,8 @@
 		104CB87D26681C0D00718F9A /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104CB87C26681C0D00718F9A /* UIViewController+Extensions.swift */; };
 		104CB88426681E0100718F9A /* StatisticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104CB88226681E0100718F9A /* StatisticViewController.swift */; };
 		104CB88526681E0100718F9A /* StatisticViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 104CB88326681E0100718F9A /* StatisticViewController.xib */; };
+		10C762C926690FA7003D09CA /* StatisticTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C762C726690FA7003D09CA /* StatisticTableViewCell.swift */; };
+		10C762CA26690FA7003D09CA /* StatisticTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10C762C826690FA7003D09CA /* StatisticTableViewCell.xib */; };
 		10CA25362666ADE00065F18B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CA25352666ADE00065F18B /* AppDelegate.swift */; };
 		10CA253F2666ADE20065F18B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10CA253E2666ADE20065F18B /* Assets.xcassets */; };
 		10CA25422666ADE20065F18B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10CA25402666ADE20065F18B /* LaunchScreen.storyboard */; };
@@ -60,6 +62,8 @@
 		104CB87C26681C0D00718F9A /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		104CB88226681E0100718F9A /* StatisticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticViewController.swift; sourceTree = "<group>"; };
 		104CB88326681E0100718F9A /* StatisticViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticViewController.xib; sourceTree = "<group>"; };
+		10C762C726690FA7003D09CA /* StatisticTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticTableViewCell.swift; sourceTree = "<group>"; };
+		10C762C826690FA7003D09CA /* StatisticTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticTableViewCell.xib; sourceTree = "<group>"; };
 		10CA25322666ADE00065F18B /* FizzBuzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FizzBuzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10CA25352666ADE00065F18B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10CA253E2666ADE20065F18B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -165,6 +169,7 @@
 		104CB88126681DE900718F9A /* statistic */ = {
 			isa = PBXGroup;
 			children = (
+				10C762C626690F70003D09CA /* components */,
 				104CB88226681E0100718F9A /* StatisticViewController.swift */,
 				104CB88326681E0100718F9A /* StatisticViewController.xib */,
 			);
@@ -177,6 +182,15 @@
 				10260CB82667A17000D65DD3 /* SharedAppDependencies.swift */,
 			);
 			path = dependencies;
+			sourceTree = "<group>";
+		};
+		10C762C626690F70003D09CA /* components */ = {
+			isa = PBXGroup;
+			children = (
+				10C762C726690FA7003D09CA /* StatisticTableViewCell.swift */,
+				10C762C826690FA7003D09CA /* StatisticTableViewCell.xib */,
+			);
+			path = components;
 			sourceTree = "<group>";
 		};
 		10CA25292666ADE00065F18B = {
@@ -342,6 +356,7 @@
 				10CA25422666ADE20065F18B /* LaunchScreen.storyboard in Resources */,
 				10CA25742666AE450065F18B /* MainViewController.xib in Resources */,
 				10CA253F2666ADE20065F18B /* Assets.xcassets in Resources */,
+				10C762CA26690FA7003D09CA /* StatisticTableViewCell.xib in Resources */,
 				104CB88526681E0100718F9A /* StatisticViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,6 +392,7 @@
 				10260CBF2667A29300D65DD3 /* NavigationCoordinator.swift in Sources */,
 				104CB88426681E0100718F9A /* StatisticViewController.swift in Sources */,
 				104CB843266805E000718F9A /* ParamModel.swift in Sources */,
+				10C762C926690FA7003D09CA /* StatisticTableViewCell.swift in Sources */,
 				10260CB92667A17000D65DD3 /* SharedAppDependencies.swift in Sources */,
 				104CB8662668159800718F9A /* FizzBuzzService.swift in Sources */,
 				104CB86E2668175400718F9A /* MainViewModel.swift in Sources */,
