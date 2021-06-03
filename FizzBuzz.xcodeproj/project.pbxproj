@@ -20,6 +20,7 @@
 		104CB87D26681C0D00718F9A /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104CB87C26681C0D00718F9A /* UIViewController+Extensions.swift */; };
 		104CB88426681E0100718F9A /* StatisticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104CB88226681E0100718F9A /* StatisticViewController.swift */; };
 		104CB88526681E0100718F9A /* StatisticViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 104CB88326681E0100718F9A /* StatisticViewController.xib */; };
+		104CB88A2668256C00718F9A /* StatisticInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104CB8892668256C00718F9A /* StatisticInteractor.swift */; };
 		1056B79726695A1900111E06 /* StatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1056B79626695A1900111E06 /* StatisticsViewModel.swift */; };
 		1056B79C26695A4100111E06 /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1056B79B26695A4100111E06 /* ItemViewModel.swift */; };
 		10C762C926690FA7003D09CA /* StatisticTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C762C726690FA7003D09CA /* StatisticTableViewCell.swift */; };
@@ -64,6 +65,7 @@
 		104CB87C26681C0D00718F9A /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		104CB88226681E0100718F9A /* StatisticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticViewController.swift; sourceTree = "<group>"; };
 		104CB88326681E0100718F9A /* StatisticViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticViewController.xib; sourceTree = "<group>"; };
+		104CB8892668256C00718F9A /* StatisticInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticInteractor.swift; sourceTree = "<group>"; };
 		1056B79626695A1900111E06 /* StatisticsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewModel.swift; sourceTree = "<group>"; };
 		1056B79B26695A4100111E06 /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
 		10C762C726690FA7003D09CA /* StatisticTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticTableViewCell.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				10C762C626690F70003D09CA /* components */,
 				104CB88226681E0100718F9A /* StatisticViewController.swift */,
 				104CB88326681E0100718F9A /* StatisticViewController.xib */,
+				104CB8892668256C00718F9A /* StatisticInteractor.swift */,
 				1056B79626695A1900111E06 /* StatisticsViewModel.swift */,
 			);
 			path = statistic;
@@ -392,6 +395,7 @@
 				104CB8782668186E00718F9A /* Constants.swift in Sources */,
 				1056B79C26695A4100111E06 /* ItemViewModel.swift in Sources */,
 				104CB8302668003D00718F9A /* observable.swift in Sources */,
+				104CB88A2668256C00718F9A /* StatisticInteractor.swift in Sources */,
 				104CB83D266804B200718F9A /* DisplayViewModel.swift in Sources */,
 				104CB87D26681C0D00718F9A /* UIViewController+Extensions.swift in Sources */,
 				104CB873266817E700718F9A /* MainInteractor.swift in Sources */,
