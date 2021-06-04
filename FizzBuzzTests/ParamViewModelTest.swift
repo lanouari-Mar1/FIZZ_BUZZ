@@ -10,18 +10,23 @@ import XCTest
 
 class ParamViewModelTest: XCTestCase {
   
-  func test_initWithNilValues_shouldBeNil() {
+  func test_init_WithNilValues_shouldBeNil() {
     let vm = ParamViewModel(firstInt: nil, secondInt: nil, limit: nil, firstString: nil, secondString: "nice")
     XCTAssertNil(vm.getParamModel())
   }
   
-  func test_initWithEmptyString_shouldBeNil() {
+  func test_init_WithEmptyString_shouldBeNil() {
     let vm = ParamViewModel(firstInt: "nice", secondInt: "10", limit: "10", firstString: "nice", secondString: "")
     XCTAssertNil(vm.getParamModel())
   }
   
-  func test_initNoneIntParam_shouldBeNil() {
+  func test_init_WithNoneIntParam_shouldBeNil() {
     let vm = ParamViewModel(firstInt: "nice", secondInt: "10", limit: "10", firstString: "nice", secondString: "nice")
+    XCTAssertNil(vm.getParamModel())
+  }
+  
+  func test_init_WithZeroIntParams_shouldBeNil() {
+    let vm = ParamViewModel(firstInt: "0", secondInt: "0", limit: "0", firstString: "nice", secondString: "nice")
     XCTAssertNil(vm.getParamModel())
   }
   
