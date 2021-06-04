@@ -23,9 +23,15 @@ class MainInteractor: MainUseCase {
   
   func calculFizzBuzz(with paramViewModel: ParamViewModel) {
     guard let paramModel = paramViewModel.getParamModel() else {
-      viewModel.displayedResult.context.value = .error
+      viewModel.displayedResult.context.value = .error(.incorrectParams)
       return
     }
+    
+    if  paramModel.isLimitExceeded() {
+      viewModel.displayedResult.context.value = .error(.maxLimit)
+      return
+    }
+    
     viewModel.displayedResult.context.value = .isLoading
     fizzBuzzService.calculFizzBuzz(model: paramModel) { [weak self] result in
       self?.viewModel.displayedResult.context.value = .success(result)

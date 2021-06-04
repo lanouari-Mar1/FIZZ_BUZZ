@@ -22,4 +22,8 @@ struct ParamModel: Hashable {
     self.firstString = firstString
     self.secondString = secondString
   }
+  
+  func isLimitExceeded() -> Bool {
+    limit > Constants.maxLimitNumber
+  }
 }

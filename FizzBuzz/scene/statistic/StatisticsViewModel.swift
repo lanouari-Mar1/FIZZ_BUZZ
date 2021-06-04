@@ -8,7 +8,7 @@
 import Foundation
 
 struct StatisticsViewModel {
-  var itemViewModels: [ItemViewModel]
+  let itemViewModels: [ItemViewModel]
   
   init(results: [ParamModel : Int]) {
     itemViewModels = results

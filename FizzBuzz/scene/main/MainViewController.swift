@@ -77,10 +77,12 @@ class MainViewController: UIViewController {
     switch context {
     case .isLoading:
       refreshLoadingAnimation(isPlaying: true)
-    case .error:
+    case .error(let errorType) where errorType == .incorrectParams:
       presentErrorAlert(title: Constants.validationErrorTitle, message: Constants.validationErrorMessage)
       refreshLoadingAnimation(isPlaying: false)
-    break
+    case .error(let errorType) where errorType == .maxLimit:
+      presentErrorAlert(title: Constants.maxLimitErrorTitle, message: Constants.maxLimitErrorMessage)
+      refreshLoadingAnimation(isPlaying: false)
     case .success(let result):
       refreshLoadingAnimation(isPlaying: false)
       resultLbl.text = result

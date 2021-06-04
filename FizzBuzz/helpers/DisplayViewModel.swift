@@ -16,6 +16,11 @@ struct DisplayViewModel<T> {
 enum DisplayType<T> {
   case isLoading
   case none
-  case error
+  case error(ErrorType)
   case success(T)
+}
+
+enum ErrorType {
+  case incorrectParams
+  case maxLimit
 }

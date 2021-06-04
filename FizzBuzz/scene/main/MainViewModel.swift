@@ -32,7 +32,10 @@ struct ParamViewModel {
           let int2Strong = Int(secondInt ?? ""),
           let limiteStrong = Int(limit ?? ""),
           let str1Strong = firstString,
-          let str2Strong = secondString else {
+          let str2Strong = secondString,
+          int1Strong > 0,
+          int2Strong > 0,
+          limiteStrong > 0 else {
       return nil
     }
     

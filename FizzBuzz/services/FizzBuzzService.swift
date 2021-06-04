@@ -28,11 +28,11 @@ class FizzBuzzService: FizzBuzzServiceProtocol {
   }
   
   private func calculResult(model: ParamModel) -> String {
-    var resultStr = ""
+    var resultStr = [String]()
     for i in 1...model.limit {
-      resultStr = resultStr + getFizzBuzzString(for: i, model: model) + ","
+      resultStr.append(getFizzBuzzString(for: i, model: model))
     }
-    return resultStr
+    return resultStr.joined(separator: ",")
   }
   
   private func getFizzBuzzString(for number: Int, model: ParamModel) -> String {
