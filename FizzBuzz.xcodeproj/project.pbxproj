@@ -34,6 +34,7 @@
 		10CA25732666AE450065F18B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CA25712666AE450065F18B /* MainViewController.swift */; };
 		10CA25742666AE450065F18B /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10CA25722666AE450065F18B /* MainViewController.xib */; };
 		10F821AC266ACBB30058643F /* ItemViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F821AB266ACBB30058643F /* ItemViewModelTest.swift */; };
+		10F821B1266ACC200058643F /* StatisticsViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F821B0266ACC200058643F /* StatisticsViewModelTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		10CA25712666AE450065F18B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		10CA25722666AE450065F18B /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		10F821AB266ACBB30058643F /* ItemViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModelTest.swift; sourceTree = "<group>"; };
+		10F821B0266ACC200058643F /* StatisticsViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewModelTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +254,7 @@
 				104CB8522668069E00718F9A /* ParamViewModelTest.swift */,
 				1056B7AB2669610500111E06 /* FizzBuzzServiceTest.swift */,
 				10F821AB266ACBB30058643F /* ItemViewModelTest.swift */,
+				10F821B0266ACC200058643F /* StatisticsViewModelTest.swift */,
 			);
 			path = FizzBuzzTests;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 				1056B7AC2669610500111E06 /* FizzBuzzServiceTest.swift in Sources */,
 				10F821AC266ACBB30058643F /* ItemViewModelTest.swift in Sources */,
 				10CA254D2666ADE20065F18B /* FizzBuzzTests.swift in Sources */,
+				10F821B1266ACC200058643F /* StatisticsViewModelTest.swift in Sources */,
 				104CB8532668069E00718F9A /* ParamViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
