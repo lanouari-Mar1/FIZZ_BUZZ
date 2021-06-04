@@ -23,6 +23,7 @@
 		104CB88A2668256C00718F9A /* StatisticInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104CB8892668256C00718F9A /* StatisticInteractor.swift */; };
 		1056B79726695A1900111E06 /* StatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1056B79626695A1900111E06 /* StatisticsViewModel.swift */; };
 		1056B79C26695A4100111E06 /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1056B79B26695A4100111E06 /* ItemViewModel.swift */; };
+		1056B7AC2669610500111E06 /* FizzBuzzServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1056B7AB2669610500111E06 /* FizzBuzzServiceTest.swift */; };
 		10C762C926690FA7003D09CA /* StatisticTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C762C726690FA7003D09CA /* StatisticTableViewCell.swift */; };
 		10C762CA26690FA7003D09CA /* StatisticTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10C762C826690FA7003D09CA /* StatisticTableViewCell.xib */; };
 		10CA25362666ADE00065F18B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CA25352666ADE00065F18B /* AppDelegate.swift */; };
@@ -68,6 +69,7 @@
 		104CB8892668256C00718F9A /* StatisticInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticInteractor.swift; sourceTree = "<group>"; };
 		1056B79626695A1900111E06 /* StatisticsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewModel.swift; sourceTree = "<group>"; };
 		1056B79B26695A4100111E06 /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
+		1056B7AB2669610500111E06 /* FizzBuzzServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzServiceTest.swift; sourceTree = "<group>"; };
 		10C762C726690FA7003D09CA /* StatisticTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticTableViewCell.swift; sourceTree = "<group>"; };
 		10C762C826690FA7003D09CA /* StatisticTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticTableViewCell.xib; sourceTree = "<group>"; };
 		10CA25322666ADE00065F18B /* FizzBuzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FizzBuzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -246,6 +248,7 @@
 				10CA254C2666ADE20065F18B /* FizzBuzzTests.swift */,
 				10CA254E2666ADE20065F18B /* Info.plist */,
 				104CB8522668069E00718F9A /* ParamViewModelTest.swift */,
+				1056B7AB2669610500111E06 /* FizzBuzzServiceTest.swift */,
 			);
 			path = FizzBuzzTests;
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1056B7AC2669610500111E06 /* FizzBuzzServiceTest.swift in Sources */,
 				10CA254D2666ADE20065F18B /* FizzBuzzTests.swift in Sources */,
 				104CB8532668069E00718F9A /* ParamViewModelTest.swift in Sources */,
 			);
