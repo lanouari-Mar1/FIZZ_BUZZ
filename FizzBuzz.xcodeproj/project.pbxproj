@@ -33,6 +33,7 @@
 		10CA25582666ADE20065F18B /* FizzBuzzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CA25572666ADE20065F18B /* FizzBuzzUITests.swift */; };
 		10CA25732666AE450065F18B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CA25712666AE450065F18B /* MainViewController.swift */; };
 		10CA25742666AE450065F18B /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10CA25722666AE450065F18B /* MainViewController.xib */; };
+		10F821AC266ACBB30058643F /* ItemViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F821AB266ACBB30058643F /* ItemViewModelTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		10CA25592666ADE20065F18B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10CA25712666AE450065F18B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		10CA25722666AE450065F18B /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		10F821AB266ACBB30058643F /* ItemViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModelTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +251,7 @@
 				10CA254E2666ADE20065F18B /* Info.plist */,
 				104CB8522668069E00718F9A /* ParamViewModelTest.swift */,
 				1056B7AB2669610500111E06 /* FizzBuzzServiceTest.swift */,
+				10F821AB266ACBB30058643F /* ItemViewModelTest.swift */,
 			);
 			path = FizzBuzzTests;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1056B7AC2669610500111E06 /* FizzBuzzServiceTest.swift in Sources */,
+				10F821AC266ACBB30058643F /* ItemViewModelTest.swift in Sources */,
 				10CA254D2666ADE20065F18B /* FizzBuzzTests.swift in Sources */,
 				104CB8532668069E00718F9A /* ParamViewModelTest.swift in Sources */,
 			);
